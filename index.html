@@ -1,0 +1,76 @@
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Julio Cesar Martin - Personal website</title>
+  <meta name="description" content="Julio Cesar Martin - Personal website">
+  <meta name="juliomatcom" content="Personal website">
+
+  <style media="screen" type="text/css">
+    body {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    a {
+      text-decoration: none;
+      display: block;
+    }
+    textarea.resume {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      border: 0px;
+      padding: 20px;
+      line-height: 1.5em;
+    }
+    div.info {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <textarea rows="24" class="resume" readonly></textarea>
+  <div class="info">
+    <a href="#">Blog</a>
+    <a href="https://www.linkedin.com/in/juliomatcom/">Longer resume</a>
+  </div>
+
+  <script>
+    var cv = {
+      "Name": "Julio Cesar Martin",
+      "Headline": "Full Stack Developer",
+      "Location": "Madrid, Spain",
+      "Email": "julio@julces.com",
+      "Github": "https://github.com/juliomatcom",
+      "Status": "Busy with OSS and Javascript/NodeJS",
+      "Work" : [
+        "2016/03-Present : Javascript Dev @ BBVA",
+        "2016/01-2016/06 : Nodejs Arquitect @ Barzlive",
+        "2015/07-2016/02 : Full Stack @ Kimia",
+        "2014/04-2015/07 : Full Stack @ Esocial Technologies",
+        "2012/09-2015/01 : Founder listascuba.com"
+      ],
+      "School": {
+        "name": "University of Havana, MATCOM",
+        "Career": "Computer Science",
+        "date": "2009-2013"
+      }
+    }
+    var elm = document.querySelector('textarea.resume')
+    elm.value = JSON.stringify(cv, null, '\t')
+  </script>
+</body>
+
+</html>
