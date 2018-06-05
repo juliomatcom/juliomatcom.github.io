@@ -21,19 +21,27 @@
       text-decoration: none;
       display: block;
     }
+    a.inline {
+      display: inline;
+    }
     textarea.resume {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       width: 100%;
-      height: 80vh;
       border: 0px;
       padding: 20px;
       line-height: 1.5em;
     }
     div.info {
       text-align: center;
-      margin-top: 10px;
+      margin-top: 10%;
+    }
+    div.info a {
+      margin-bottom: 5px;
+    }
+    p.note {
+      font-size: 14px;
     }
   </style>
   <!--[if lt IE 9]>
@@ -43,10 +51,13 @@
 
 <body>
   <noscript><h2>Please turn on script support in your browser.</h2></noscript>
-  <textarea rows="24" class="resume" readonly></textarea>
+  <textarea rows="32" class="resume" readonly></textarea>
   <div class="info">
     <a href="https://medium.com/@juliomatcom">Blog (medium)</a>
     <a href="https://www.linkedin.com/in/juliomatcom/">Longer resume</a>
+    <p class="note">
+      Hosted with ❤ in <a class="inline" target="_blank" href="https://github.com/juliomatcom">GitHub</a>
+    </p>
   </div>
 
   <script>
